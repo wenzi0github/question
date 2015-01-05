@@ -6,6 +6,6 @@ question
 如果页面全部用图片代替，还需要我们前端工程师干嘛？
 
 这个项目里就是用代码实现了简单的效果（如下图）：  
-![image](https://github.com/wenzi0github/question/img/master/images/s.png)  
+![image](https://github.com/wenzi0github/question/raw/master/img/s.png)  
 
 从图片里我们能够将一个问答分成两部分：问题部分和回答部分。问题部分在这里我设定成了一张背景图片，当然我们可以分成三部分，左半部分，中部分和右半部分，不过由于我们所有的问题都在有限的范围内，因此这里我就设定了一张图片；不过回答部分的背景图片，我还真的分成了三部分，上半部分，中间的内容部分和底部部分，中间的部分是不定高的，根据内容来进行背景图片的重复：background-repeat:repeat-y。
