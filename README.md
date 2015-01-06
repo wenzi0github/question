@@ -32,14 +32,34 @@ question
 
 .fl和.fr都是浮动元素，由于元素的浮动导致.main容器没有被撑开，高度为0。这里我们使用伪元素after来清除浮动：
 ```css
-.main:after{content: "\00A0";display: block;visibility: hidden;width: 0;height: 0;clear: both;font-size: 0;line-height: 0;overflow: hidden;}
+.main:after{
+content: "\00A0";
+display: block;
+visibility: hidden;
+width: 0;
+height: 0;
+clear: both;
+font-size: 0;
+line-height: 0;
+overflow: hidden;
+}
 ```
 
 添加了上面的代码后我们就能看到.main容器被撑开了，也是清除了浮动。
 
 当然，我们为了after清除浮动的通用性，我们可以单独使用一个类，为这个类使用伪元素，当哪些元素需要清除浮动时，只需要添加这个类名就可以了。
 ```css
-.clearfix:after{content: "\00A0";display: block;visibility: hidden;width: 0;height: 0;clear: both;font-size: 0;line-height: 0;overflow: hidden;}
+.clearfix:after{
+content: "\00A0";
+display: block;
+visibility: hidden;
+width: 0;
+height: 0;
+clear: both;
+font-size: 0;
+line-height: 0;
+overflow: hidden;
+}
 ```
 ```html
 <div class="main clearfix">
